@@ -7,6 +7,9 @@ android {
     namespace = "com.madhavsolanki.sharedpreferences"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.madhavsolanki.sharedpreferences"
         minSdk = 24
