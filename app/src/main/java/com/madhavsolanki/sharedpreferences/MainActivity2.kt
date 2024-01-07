@@ -1,6 +1,7 @@
 package com.madhavsolanki.sharedpreferences
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.madhavsolanki.sharedpreferences.databinding.ActivityMain2Binding
@@ -18,5 +19,10 @@ class MainActivity2 : AppCompatActivity() {
         val editor = getSharedPreferences("MY_SETTING", MODE_PRIVATE)
         binding.tvEmail.setText("Hey your email is: \n ${editor.getString("email", null)}")
         binding.tvPassword.setText("Hey your email is: \n ${editor.getString("password", null)}")
+
+        binding.noteBtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity2, NoteActivity::class.java))
+        }
     }
+
 }

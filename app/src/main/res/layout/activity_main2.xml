@@ -32,4 +32,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvEmail"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <Button
+        android:id="@+id/noteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:textSize="25sp"
+        android:text="Notes Module"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPassword"
+        app:layout_constraintStart_toStartOf="@+id/tvPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
